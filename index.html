@@ -1,7 +1,198 @@
 <!DOCTYPE html>
-<html>
-<body style="background:black;color:white;text-align:center;">
-<h1>موقعي شغال 🎉</h1>
-<p>سويت موقع من الجوال</p>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الخاص</title>
+    <style>
+        /* التنسيقات العامة */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
+        body { background: linear-gradient(135deg, #0f172a, #1e293b); color: #e2e8f0; line-height: 1.6; min-height: 100vh; }
+
+        /* الهيدر */
+        .site-header { background-color: rgba(15, 23, 42, 0.9); padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid #3b82f6; }
+        .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: bold; color: #60a5fa; }
+        .main-nav a { color: #cbd5e1; margin-left: 1.5rem; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .main-nav a:hover { color: #60a5fa; }
+
+        /* الأقسام الرئيسية */
+        .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to right, #1e40af, #3b82f6); margin-bottom: 2rem; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
+
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1.5rem; }
+        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 2.5rem; color: #93c5fd; border-bottom: 2px solid #4f46e5; padding-bottom: 0.5rem; display: inline-block; }
+
+        /* بطاقات الأقسام */
+        .platforms { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .platform-card { background: #1e293b; border-radius: 12px; padding: 2rem; border-left: 5px solid #3b82f6; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+        .platform-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3); }
+        .platform-card h3 { color: #60a5fa; margin-bottom: 1rem; font-size: 1.6rem; }
+        .platform-card ul { list-style-position: inside; margin-top: 1rem; }
+        .platform-card li { margin-bottom: 0.5rem; padding-right: 0.5rem; }
+
+        /* الأزرار */
+        .download-btn { display: inline-block; background: linear-gradient(to right, #4f46e5, #7c3aed); color: white; padding: 0.8rem 1.8rem; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 1rem; border: none; cursor: pointer; transition: opacity 0.3s; }
+        .download-btn:hover { opacity: 0.9; }
+
+        /* قسم الأسئلة والأسعار */
+        .faq-item, .price-item { background: #1e293b; margin: 1rem 0; padding: 1.2rem; border-radius: 8px; border-right: 4px solid #10b981; }
+        .faq-question { color: #34d399; font-weight: bold; }
+        .price-item h4 { color: #fbbf24; }
+
+        /* الفوتر */
+        .site-footer { text-align: center; padding: 2rem; margin-top: 4rem; background-color: #0f172a; color: #94a3b8; border-top: 1px solid #334155; }
+        .warning-box { background-color: #7f1d1d; color: #fecaca; padding: 1rem; border-radius: 8px; margin: 2rem auto; max-width: 800px; text-align: center; border: 1px solid #f87171; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="logo">🛡️ موقعي الخاص</div>
+            <nav class="main-nav">
+                <a href="#ios">iOS</a>
+                <a href="#android">Android</a>
+                <a href="#pc">PC</a>
+                <a href="#faq">الأسئلة</a>
+                <a href="#buy">الشراء</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>مرحباً بك في موقعي 🚀</h1>
+            <p>هذا هو موقعك الشخصي. يمكنك تعديل هذا النص وإضافة مميزاتك وأقسامك الخاصة هنا.</p>
+        </section>
+
+        <div class="container">
+            <!-- قسم iOS -->
+            <section id="ios">
+                <h2 class="section-title">📱 تطبيقات iOS</h2>
+                <div class="platforms">
+                    <div class="platform-card">
+                        <h3>تطبيق مميز 1</h3>
+                        <p>وصف قصير للتطبيق أو الخدمة المقدمة.</p>
+                        <ul>
+                            <li>ميزة أمان متقدمة.</li>
+                            <li>تحديثات مستمرة.</li>
+                            <li>سهولة في الاستخدام.</li>
+                        </ul>
+                        <a href="#" class="download-btn" onclick="alert('هذا زر تجريبي. ضع رابط التحميل الحقيقي هنا.')">تحميل للتثبيت</a>
+                    </div>
+                    <div class="platform-card">
+                        <h3>تطبيق مميز 2</h3>
+                        <p>وصف قصير لتطبيق أو خدمة أخرى.</p>
+                        <ul>
+                            <li>حماية قوية للبيانات.</li>
+                            <li>واجهة مستخدم رائعة.</li>
+                            <li>دعم فني سريع.</li>
+                        </ul>
+                        <a href="#" class="download-btn" onclick="alert('هذا زر تجريبي. ضع رابط التحميل الحقيقي هنا.')">تحميل للتثبيت</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- قسم Android -->
+            <section id="android" style="margin-top: 4rem;">
+                <h2 class="section-title">🤖 تطبيقات Android</h2>
+                <div class="platforms">
+                    <div class="platform-card">
+                        <h3>تطبيق الأندرويد الأول</h3>
+                        <p>وصف للتطبيق المميز للأجهزة الذكية.</p>
+                        <ul>
+                            <li>متوافق مع جميع الإصدارات.</li>
+                            <li>لا يتطلب صلاحيات الجذر.</li>
+                            <li>خالي من الإعلانات.</li>
+                        </ul>
+                        <a href="#" class="download-btn" onclick="alert('هذا زر تجريبي. ضع رابط التحميل الحقيقي هنا.')">تحميل ملف APK</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- قسم PC -->
+            <section id="pc" style="margin-top: 4rem;">
+                <h2 class="section-title">💻 تطبيقات الكمبيوتر</h2>
+                <div class="platforms">
+                    <div class="platform-card">
+                        <h3>برنامج كمبيوتر قوي</h3>
+                        <p>وصف للبرنامج المميز لأجهزة الكمبيوتر.</p>
+                        <ul>
+                            <li>أداء عالي وسريع.</li>
+                            <li>دليل إرشادي شامل.</li>
+                            <li>تحديثات مجانية.</li>
+                        </ul>
+                        <a href="#" class="download-btn" onclick="alert('هذا زر تجريبي. ضع رابط التحميل الحقيقي هنا.')">تحميل للكمبيوتر</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- تحذير مهم -->
+            <div class="warning-box">
+                ⚠️ <strong>ملاحظة هامة:</strong> هذا قالب موقع لأغراض تعليمية وعرضية. روابط التحميل غير مفعلة. أي استخدام لمحتوى حقيقي لتوزيع برامج مخالفة يقع تحت مسؤوليتك الكاملة ويتضمن مخاطر قانونية وأمنية.
+            </div>
+
+            <!-- قسم الأسئلة الشائعة -->
+            <section id="faq" style="margin-top: 4rem;">
+                <h2 class="section-title">❓ الأسئلة الشائعة</h2>
+                <div class="faq-item">
+                    <p class="faq-question">س: كيف أقوم بالتثبيت؟</p>
+                    <p>ج: اتبع الخطوات الموضحة في قسم كل تطبيق. بشكل عام، اضغط زر التنزيل واتبع الإرشادات.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">س: هل هناك ضمان؟</p>
+                    <p>ج: نقدم دعمًا فنيًا للمساعدة في حل المشاكل التقنية.</p>
+                </div>
+            </section>
+
+            <!-- قسم الشراء -->
+            <section id="buy" style="margin-top: 4rem;">
+                <h2 class="section-title">💰 باقات الاشتراك</h2>
+                <div class="platforms">
+                    <div class="price-item">
+                        <h4>الباقة الأساسية</h4>
+                        <p>اشتراك لمدة 6 أشهر.</p>
+                        <p><strong>السعر: 10 $</strong></p>
+                    </div>
+                    <div class="price-item">
+                        <h4>الباقة المميزة</h4>
+                        <p>اشتراك لمدة سنة كاملة + دعم أولوية.</p>
+                        <p><strong>السعر: 18 $</strong></p>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 1rem;">للشراء، يرجى التواصل مع الدعم عبر منصات التواصل المذكورة.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2023 موقعي الخاص. جميع الحقوق محفوظة.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">هذا الموقع هو قالب تجريبي. المحتوى الحقيقي هو مسؤولية صاحب الموقع.</p>
+    </footer>
+
+    <script>
+        // كود جافا سكريبت بسيط لجعل التنقل سلساً
+        document.querySelectorAll('.main-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                window.scrollTo({
+                    top: targetSection.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        // إضافة تنبيه عند الضغط على أي زر تحميل
+        document.querySelectorAll('.download-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if(this.getAttribute('href') === '#') {
+                    e.preventDefault();
+                    alert("🔧 هذه زر تجريبي. لتفعيله، استبدل '#' في الكود برابط التحميل الحقيقي.");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
