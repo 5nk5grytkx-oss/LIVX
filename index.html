@@ -1,16 +1,3 @@
-panel:
- 
-mkdir pterodactyl
- 
-cd pterodactyl
- 
-mkdir panel
- 
-cd panel
- 
-nano docker-compose.yml
- 
- 
 version: '3.8'
 x-common:
   database:
@@ -91,32 +78,3 @@ networks:
     ipam:
       config:
         - subnet: 172.20.0.0/16
-
-press ctrl+0 then press enter & again press ctrl+x
- 
-docker-compose up -d
- 
-Create a user for the panel:
- 
-docker-compose run --rm panel php artisan p:user:make
-
-
-
-
-
-ÙÙØ§Ø© ÙÙÙØ§
-https://youtube.com/@nova-maker?si=N93jpNM3NUlkSvsk
-ÙÙØ¯ÙÙ Ø´Ø±Ø­
-
-https://youtu.be/9rzPNzoqNpU
-
-
-
-
-
-
-
-
-
-
-
